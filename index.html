@@ -19,7 +19,7 @@
                 <li><a href="https://briantbell.github.io/EngHandbook/">Home</a></li>
                 <!--Modules-->
                 <hr>
-                <p>Topc</p>
+                <p>Dynamics</p>
                 <li><a href="index.html">Equations</a></li>
                 <li><a href="examples.html">Worked Examples</a></li>
                 <hr>
@@ -42,13 +42,93 @@
     <!--Main Site Content-->
     <div class="content">
         <header>
-            <h1>Topic</h1>
+            <h1>Dynamics</h1>
         </header>
         <main>
-            <!--Subtopic-->
+            <!--Equations-->
             <section>
-                <h2>Subheader</h2>
-                <p>Lorem.</p>
+                <h2>1. Kinematics (Rectilinear Motion)</h2>
+                <p>Position: \( s = s_0 + v_0 t + \frac{1}{2} a t^2 \) (constant acceleration)</p>
+                <p>Velocity: \( v = v_0 + a t \)</p>
+                <p>Acceleration: \( a = \frac{dv}{dt} = \frac{d^2 s}{dt^2} \)</p>
+                <p>Velocity-Position: \( v^2 = v_0^2 + 2 a (s - s_0) \)</p>
+                <p>Average Velocity: \( v_{\text{avg}} = \frac{s_{\text{final}} - s_{\text{initial}}}{t} \)</p>
+                <hr>
+
+                <h2>2. Kinematics (Curvilinear Motion)</h2>
+                <p>Position Vector: \( \vec{r} = x \hat{i} + y \hat{j} + z \hat{k} \)</p>
+                <p>Velocity: \( \vec{v} = \frac{d\vec{r}}{dt} \), magnitude \( v = |\vec{v}| \)</p>
+                <p>Acceleration: \( \vec{a} = \frac{d\vec{v}}{dt} = \frac{d^2 \vec{r}}{dt^2} \)</p>
+                <p>Tangential/Normal Components:</p>
+                <p>Tangential: \( a_t = \frac{dv}{dt} \)</p>
+                <p>Normal: \( a_n = \frac{v^2}{\rho} \) (\( \rho \) = radius of curvature)</p>
+                <p>Projectile Motion (no air resistance):</p>
+                <p>Horizontal: \( x = v_0 \cos\theta \cdot t \)</p>
+                <p>Vertical: \( y = v_0 \sin\theta \cdot t - \frac{1}{2} g t^2 \)</p>
+                <p>Range: \( R = \frac{v_0^2 \sin(2\theta)}{g} \)</p>
+                <hr>
+
+                <h2>3. Kinetics (Newton’s Laws)</h2>
+                <p>Newton’s Second Law: \( \sum \vec{F} = m \vec{a} \)</p>
+                <p>Weight: \( W = m g \)</p>
+                <p>Friction:</p>
+                <p>Static: \( F_f \leq \mu_s N \)</p>
+                <p>Kinetic: \( F_f = \mu_k N \)</p>
+                <hr>
+
+                <h2>4. Work and Energy</h2>
+                <p>Work: \( W = \int \vec{F} \cdot d\vec{r} = F s \cos\theta \) (constant force)</p>
+                <p>Kinetic Energy: \( T = \frac{1}{2} m v^2 \)</p>
+                <p>Potential Energy:</p>
+                <p>Gravitational: \( V_g = m g h \)</p>
+                <p>Elastic: \( V_e = \frac{1}{2} k x^2 \)</p>
+                <p>Work-Energy Principle: \( T_1 + V_1 + W_{\text{non-conservative}} = T_2 + V_2 \)</p>
+                <p>Conservation of Energy: \( T_1 + V_1 = T_2 + V_2 \)</p>
+                <p>Power: \( P = \frac{dW}{dt} = \vec{F} \cdot \vec{v} \)</p>
+                <hr>
+
+                <h2>5. Impulse and Momentum</h2>
+                <p>Linear Momentum: \( \vec{p} = m \vec{v} \)</p>
+                <p>Impulse: \( \vec{J} = \int \vec{F} \, dt = \Delta \vec{p} \)</p>
+                <p>Conservation of Momentum: If \( \sum \vec{F}_{\text{ext}} = 0 \), then \( \vec{p}_1 = \vec{p}_2 \)</p>
+                <p>Coefficient of Restitution: \( e = \frac{v_{2,\text{relative}} - v_{1,\text{relative}}}{u_{1,\text{relative}} - u_{2,\text{relative}}} \)</p>
+                <hr>
+
+                <h2>6. Rotational Kinematics</h2>
+                <p>Angular Position: \( \theta \)</p>
+                <p>Angular Velocity: \( \omega = \frac{d\theta}{dt} \)</p>
+                <p>Angular Acceleration: \( \alpha = \frac{d\omega}{dt} = \frac{d^2 \theta}{dt^2} \)</p>
+                <p>Constant Angular Acceleration:</p>
+                <p>\( \omega = \omega_0 + \alpha t \)</p>
+                <p>\( \theta = \theta_0 + \omega_0 t + \frac{1}{2} \alpha t^2 \)</p>
+                <p>\( \omega^2 = \omega_0^2 + 2 \alpha (\theta - \theta_0) \)</p>
+                <p>Linear-Angular Relations: \( v = \omega r \), \( a_t = \alpha r \), \( a_n = \omega^2 r \)</p>
+                <hr>
+
+                <h2>7. Rotational Kinetics</h2>
+                <p>Moment of Force (Torque): \( \vec{\tau} = \vec{r} \times \vec{F} \), magnitude \( \tau = F r \sin\theta \)</p>
+                <p>Newton’s Second Law for Rotation: \( \sum \vec{\tau} = I \vec{\alpha} \)</p>
+                <p>Moment of Inertia: \( I = \int r^2 \, dm \)</p>
+                <p>Common shapes:</p>
+                <p>Thin rod (about center): \( I = \frac{1}{12} m L^2 \)</p>
+                <p>Disk/Cylinder: \( I = \frac{1}{2} m R^2 \)</p>
+                <p>Angular Momentum: \( \vec{L} = I \vec{\omega} \)</p>
+                <p>Conservation of Angular Momentum: If \( \sum \vec{\tau}_{\text{ext}} = 0 \), then \( \vec{L}_1 = \vec{L}_2 \)</p>
+                <hr>
+
+                <h2>8. Rolling Motion</h2>
+                <p>Condition for Rolling: \( v_{\text{cm}} = \omega R \)</p>
+                <p>Kinetic Energy: \( T = \frac{1}{2} m v_{\text{cm}}^2 + \frac{1}{2} I \omega^2 \)</p>
+                <p>Acceleration (incline): \( a = \frac{g \sin\theta}{1 + \frac{I}{m R^2}} \)</p>
+                <hr>
+
+                <h2>9. Vibrations</h2>
+                <p>Simple Harmonic Motion:</p>
+                <p>Displacement: \( x = A \cos(\omega t + \phi) \)</p>
+                <p>Velocity: \( v = -A \omega \sin(\omega t + \phi) \)</p>
+                <p>Acceleration: \( a = -A \omega^2 \cos(\omega t + \phi) \)</p>
+                <p>Angular Frequency: \( \omega = \sqrt{\frac{k}{m}} \) (mass spring), \( \omega = \sqrt{\frac{g}{L}} \) (pendulum)</p>
+                <p>Period: \( T = \frac{2\pi}{\omega} \)</p>
             </section>
             <hr>
             
